@@ -6,6 +6,7 @@ import java.util.List;
 
 
 public interface ContactService {
+	 
 	
 	public boolean saveContact(Contact contact);
 	

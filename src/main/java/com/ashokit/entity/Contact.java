@@ -2,6 +2,7 @@ package com.ashokit.entity;
 
 import java.time.LocalDate;
 
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,6 +15,8 @@ import lombok.Data;
 @Table(name = "CONTACT_DTLS")
 @Data
 public class Contact {
+	
+
 	@Id
 	@GeneratedValue
 	@Column(name = "CONTACT_ID")
@@ -36,5 +39,78 @@ public class Contact {
 	
 	@Column(name = "UPDATED_DATE")
 	private LocalDate updatedDate;
+
+	public Object getContactId;
+
+	public Integer getContactId() {
+		return contactId;
+	}
+
+	public void setContactId(Integer contactId) {
+		this.contactId = contactId;
+	}
+
+	public String getContactName() {
+		return contactName;
+	}
+
+	public void setContactName(String contactName) {
+		this.contactName = contactName;
+	}
+
+	public String getContactEmail() {
+		return contactEmail;
+	}
+
+	public void setContactEmail(String contactEmail) {
+		this.contactEmail = contactEmail;
+	}
+
+	public Long getContactNumber() {
+		return contactNumber;
+	}
+
+	public void setContactNumber(Long contactNumber) {
+		this.contactNumber = contactNumber;
+	}
+
+	public Character getActiveSwitch() {
+		return activeSwitch;
+	}
+
+	public void setActiveSwitch(Character activeSwitch) {
+		this.activeSwitch = activeSwitch;
+	}
+
+	public LocalDate getCreatedDate() {
+		return createdDate;
+	}
+
+	public void setCreatedDate(LocalDate createdDate) {
+		this.createdDate = createdDate;
+	}
+
+	public LocalDate getUpdatedDate() {
+		return updatedDate;
+	}
+
+	public void setUpdatedDate(LocalDate updatedDate) {
+		this.updatedDate = updatedDate;
+	}
+
+	
+
+
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
 
 }
